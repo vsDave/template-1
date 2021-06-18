@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: arial;
+    }
+
+    .nav {
+        background: black;
+        height: 50px;
+        }
+    .camera{
+        padding-left: 450px;
+        display: flex;
+        align-items: center;
+        justify-content:flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        }
+    img {
+        border-radius:50px;
+        height: 50px;
+        width: 5vh;
+        }
+
+    .camera a {
+        font-size: 25px;
+       text-decoration: none;
+        color: blanchedalmond;
+    }
+
+    .intro {
+        color: gray;
+        text-align: center;
+    }
+
+    .container h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* ul {
+        list-style: none;
+    }
+
+    ul li {
+        font-family: arial;
+        color: white;
+        font-size: 30px;
+        padding-left: 300px;
+        padding-top: 10px;
+    }
+
+    img {
+        width: 55px;
+        height: 55px;
+        color: white;
+    }
+
+    h1 {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    p {
+        font-family: Arial;
+    }
+
+    .navigation-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar {
+        height: 50px;
+        width: 100%;
+        background-color: black;
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center;
+    }
+
+    .menu,.menu1,.menu2 {
+        width: 35px;
+        height: 5px;
+        background-color: black;
+        margin: 6px 1500px;
+        background: chartreuse;
+    } */
+
+    button {
+        border: none;
+        color: white;
+        padding: 14px 28px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .buttonfirst {
+        color: white;
+        border: none;
+        background-color: #2196F3;
+        border-radius: 5px;
+    }
+
+    .buttonfirst:hover {
+        background-color: #0b7dda;
+    }
+
+    .buttonsecond {
+        color: white;
+        background-color: gray;
+        border-radius: 5px;
+        margin-left: auto;
+    }
+
+    .buttonsecond:hover {
+        background-color: rgb(83, 79, 79);
+    }
+
+    .flex-container {
+        display: flex;
+        background-color: whitesmoke;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .button-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .flex-item {
+        width: 350px;
+        height: 400px;
+    }
+
+    .part1 {
+        background-color: gray;
+        height: 200px;
+        width: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .part2 {
+        background-color: white;
+        height: 130px;
+        width: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-top: 6px;
+    }
+
+    .part1 h1 {
+        color: whitesmoke;
+        padding-top: 80px;
+        text-align: center;
+    }
+
+    .part2 p {
+        text-align: center;
+    }
+
+    .part3 {
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 5px;
+        height: 10px;
+    }
+
+    .part3 button {
+        border: 1px solid gray;
+        border-bottom-left-radius: 1px;
+        border-top-left-radius: 1px;
+    }
+
+    .view {
+        display: flex;
+        align-items: center;
+        /* justify-content:flex-start; */
+        background-color: white;
+        color: gray;
+        /* width: 15px; */
+        /* margin-bottom:200px; */
+
+    }
+
+    .view:hover {
+        background: gray;
+        color: white;
+    }
+
+    .edit {
+        background-color: white;
+        color: gray;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .edit:hover {
+        background: gray;
+        color: white;
+    }
+
+    .min {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+    }
+
+    .min p {
+        font-size: 15px;
+        font-family: arial;
+        color: gray;
+        padding-left: 60px;
+        margin-bottom: 2px;
+    }
+
+    footer {
+
+        height: 150px;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* text-align: left; */
+        font-size: 20px;
+        align-items: center;
+
+
+    }
+
+    .footer-content a {
+        color: rgb(81, 157, 228);
+        text-decoration: none;
+
+    }
+
+    .footer-content a:hover {
+        text-decoration: underline;
+    }
+
+    .footer-content p {
+        margin-bottom: 0;
+        color: gray;
+        padding-left: 450px;
+    }
+
+    .backtotop {
+        /* padding-top: 20px;
+        padding-right: 250px; */
+        float: right;
+        font-size: 20px;
+        color: blue;
+    }
+
+    .backtotop a {
+
+        /* padding-right: 150px; */
+        font-family: arial;
+        color: rgb(81, 157, 228);
+        text-decoration: none;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="nav">
+            <div class="camera">
+                <img src="camera.png">
+                <a href="#">Album</a>
+          </div>
+          <div class="menulist">
+            <ul>
+                    <div class="menu"></div>
+                    <div class="menu1"></div>
+                    <div class="menu2"></div>
+             </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Navigation Bar
+    <div class="navigation-container">
+        <nav class="navbar">
+            Logo
+            <div class="logo">
+                <img src="camera.png">
+                <span class="logo-name">
+                    Album
+                </span>
+            </div>
+            Menu Item
+            <div>
+                <ul class="icon-bar">
+                    <li>
+                        <div class="menu"></div>
+                        <div class="menu1"></div>
+                        <div class="menu2"></div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <h1>Album Example</h1>
+
+    <p>Something short and leading about the collection below--its contents,<br>the creator ,etc. Make it short and
+        sweet
+        ,but not too short so folks don't<br> simply skip over it entirely.
+    </p> -->
+    <div class="intro">
+        <div class="container">
+            <h1>Album Example</h1>
+            <p> Something short and leading about the collection below—its contents, <br>the creator, etc.
+                Make it short and sweet, but not too short so folks don't <br>simply skip over it entirely.</p>
+        </div>
+
+    </div>
+    <!-- Button section -->
+    <div class="button-section">
+        <div>
+            <button class="buttonfirst">Main call to action</button>
+        </div>
+        <div>
+            <button class="buttonsecond">Secondary call to action </button>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="flex-container">
+        <!-- row-1 -->
+        <div class="row-1">
+            <div class="flex-item">
+                <div class="part1">
+                    <h1>Thumbnail</h1>
+                </div>
+                <div class="part2">
+                    <p>This is a wider card with supporting text below as a natural lead-in to additional content.
+                        This content is a little bit longer.</p>
+                    <div class="part3">
+                        <button type="button" class="view">View</button>
+                        <button type="button" class="edit">Edit</button>
+                        <div class="min">
+                            <p>9 mins</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="flex-item">
+                <div class="part1">
+                    <h1>Thumbnail</h1>
+                </div>
+                <div class="part2">
+                    <p>This is a wider card with supporting text below as a natural lead-in to additional content.
+                        This content is a little bit longer.</p>
+                    <div class="part3">
+                        <button type="button" class="view">View</button>
+                        <button type="button" class="edit">Edit</button>
+                        <div class="min">
+                            <p>9 mins</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-item">
+                <div class="part1">
+                    <h1>Thumbnail</h1>
+                </div>
+                <div class="part2">
+                    <p>This is a wider card with supporting text below as a natural lead-in to additional content.
+                        This content is a little bit longer.</p>
+                    <div class="part3">
+                        <button type="button" class="view">View</button>
+                        <button type="button" class="edit">Edit</button>
+                        <div class="min">
+                            <p>9 mins</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- row-2 -->
+        <div>
+            <div class="flex-item">
+                <div class="part1">
+                    <h1>Thumbnail</h1>
+                </div>
+                <div class="part2">
+                    <p>This is a wider card with supporting text below as a natural lead-in to additional content.
+                        This content is a little bit longer.</p>
+                    <div class="part3">
+                        <button type="button" class="view">View</button>
+                        <button type="button" class="edit">Edit</button>
+                        <div class="min">
+                            <p>9 mins</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-item">
+                <div class="part1">
+                    <h1>Thumbnail</h1>
+                </div>
+                <div class="part2">
+                    <p>This is a wider card with supporting text below as a natural lead-in to additional content.
+                        This content is a little bit longer.</p>
+                    <div class="part3">
+                        <button type="button" class="view">View</button>
+                        <button type="button" class="edit">Edit</button>
+                        <div class="min">
+                            <p>9 mins</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-item">
+                <div class="part1">
+                    <h1>Thumbnail</h1>
+                </div>
+                <div class="part2">
+                    <p>This is a wider card with supporting text below as a natural lead-in to additional content.
+                        This content is a little bit longer.</p>
+                    <div class="part3">
+                        <button type="button" class="view">View</button>
+                        <button type="button" class="edit">Edit</button>
+                        <div class="min">
+                            <p>9 mins</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- row-3 -->
+        <div>
+            <div class="flex-item">
+                <div class="part1">
+                    <h1>Thumbnail</h1>
+                </div>
+                <div class="part2">
+                    <p>This is a wider card with supporting text below as a natural lead-in to additional content.
+                        This content is a little bit longer.</p>
+                    <div class="part3">
+                        <button type="button" class="view">View</button>
+                        <button type="button" class="edit">Edit</button>
+                        <div class="min">
+                            <p>9 mins</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-item">
+                <div class="part1">
+                    <h1>Thumbnail</h1>
+                </div>
+                <div class="part2">
+                    <p>This is a wider card with supporting text below as a natural lead-in to additional content.
+                        This content is a little bit longer.</p>
+                    <div class="part3">
+                        <button type="button" class="view">View</button>
+                        <button type="button" class="edit">Edit</button>
+                        <div class="min">
+                            <p>9 mins</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-item">
+                <div class="part1">
+                    <h1>Thumbnail</h1>
+                </div>
+                <div class="part2">
+                    <p>This is a wider card with supporting text below as a natural lead-in to additional content.
+                        This content is a little bit longer.</p>
+                    <div class="part3">
+                        <button type="button" class="view">View</button>
+                        <button type="button" class="edit">Edit</button>
+                        <div class="min">
+                            <p>9 mins</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Album example is © Bootstrap, but please download and customize it for yourself!
+
+            <p> New to Bootstrap?<a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/">Visit the
+                    homepage</a> or <a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/">
+                    our getting started guide.</a></p>
+            </p>
+            <div class="backtotop">
+                <a href="#">back to top</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
